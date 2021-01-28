@@ -10,7 +10,7 @@ $total 		= 0;
 // $detalle = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos/bypedido/3"), true);
 
 // print_r($data); 
-// print_r($detalle); 
+print_r($detalle); 
 
 ?>
 <!DOCTYPE html>

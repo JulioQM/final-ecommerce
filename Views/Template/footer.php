@@ -22,6 +22,7 @@
     <script src="<?= base_url(); ?>/Assets/js/admin/functions_usuarios.js"></script>
     <script src="<?= base_url(); ?>/Assets/js/admin/functions_roles.js"></script>
     <script src="<?= base_url(); ?>/Assets/js/admin/functions_publicidad.js"></script>
+    <script src="<?= base_url(); ?>/Assets/js/admin/reportes.js"></script>
     
   </body>
 </html>

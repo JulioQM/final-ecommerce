@@ -10,7 +10,7 @@ require_once("../Template/nav.php");
         <div>
             <h1>
                 <i class="app-menu__icon fa fa-users"></i> PEDIDOS
-                <button class="btn btn-primary" id="btn_facturar_venta" type="button" style="margin-left: 20px;"><i class="fas fa-plus-circle"></i> Mostrar PDF</button>
+                <!-- <button class="btn btn-primary" id="btn_facturar_venta" type="button" style="margin-left: 20px;"><i class="fas fa-plus-circle"></i> Mostrar PDF</button> -->
             </h1>
         </div>
         <ul class="app-breadcrumb breadcrumb">
@@ -42,7 +42,10 @@ require_once("../Template/nav.php");
                             <tbody id="detalle_venta">
                                 <?php
                                 $cabecera = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/Pedidos"), true);
+                                // $cabecera = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/Pedidos"), true);
+
                                 $detalle = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos"), true);
+                                // $detalle = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos"), true);
 
                                 for ($i = 0; $i < count($cabecera); $i++) {
                                     $idpedido=$cabecera[$i]['idpedido'];
@@ -54,9 +57,9 @@ require_once("../Template/nav.php");
                                             <table>
                                                 <thead>
                                                     <tr>
-                                                        <th>codproducto</th>
-                                                        <th>cantidad</th>
-                                                        <th>preciounitario</th>
+                                                        <th>Cod Producto</th>
+                                                        <th>Cantidad</th>
+                                                        <th>Precio Unitario</th>
                                                     </tr>
                                                 </thead>
                                                 <body>
@@ -83,12 +86,11 @@ require_once("../Template/nav.php");
                                     }
                                     echo '<td><div class="text-center">
                                             <button class="btn btn-primary btn-sm view_factura" type="button" cl="'.$cabecera[$i]["idusuario"].'" f="'.$cabecera[$i]['idpedido'].'" title="Ver Pedido" style="background: #2970bdd5; border-color: #4a88caec;"><i class="fas fa-eye"></i></button>
-                                            <button class="btn btn-danger btn-sm" onClick="fntDelPedido('.$cabecera[$i]['idpedido'].')" title="Anular Pedido"><i class="far fa-trash-alt"></i></button>
                                         </div></td>';
                                     echo "</tr>";
                                 }
                                 ?>
-
+                                    <!-- <button class="btn btn-danger btn-sm" onClick="fntDelPedido('.$cabecera[$i]['idpedido'].')" title="Anular Pedido"><i class="far fa-trash-alt"></i></button> -->
                             </tbody>
                         </table>
                     </div>
