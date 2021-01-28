@@ -109,7 +109,7 @@ if (!empty($_POST)) {
                     if (isset($_SESSION['active'])) {
                     ?>
                         <span class="cliente">< ?php echo $_SESSION['nombre']; ?></span>
-                        <!-- <div class="login-icon">
+                        <!- <div class="login-icon">
                         <a href="../index.php" onclick="vaciarLocalStorage()" id="logout"><i class="fas fa-user"></i></a>
                     </div> -- >
                     < ?php
@@ -183,36 +183,35 @@ if (!empty($_POST)) {
             </div>
             <div class="col-sm-3 col-md-4 offset-md-1 mobile" style="margin-left: 50px;">
                 <div class="py-4 d-flex justify-content-end">
-                    
+
                 </div>
                 <div class="bg-light rounded d-flex flex-column">
                     <div class="p-2 ml-3">
                         <h4>Detalle de la orden</h4>
                     </div>
-                    <div class="p-2 d-flex">
-                        <div class="col-5"><b>ID</b></div>
-                        <div class="col-8"><b>Productos</b></div>
-                        <div class="col-5"><b>Cantidad</b></div>
-                        <div class="col-7"><b>Precio</b></div>
-                    </div>
-                    <div class="p-2 d-flex">
-                        <div class="col-5">
-                            <p id="mostrar-id">
-                        </div>
-                        <div class="col-8">
-                            <p id="mostrar-nombres"></p>
-                        </div>
-                        <div class="col-5">
-                            <p id="mostrar-cantidad"></p>
-                        </div>
-                        <div class="col-7">
-                            <p id="mostrar-precio"></p>
-                        </div>
-                        <div class="col-7" style="display: none">
-                        <!-- <div class="col-7"> -->
-                            <p id="mostrar-subTP"></p>
-                        </div>
-                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="45%">Productos</th>
+                                <th width="45%">Cantidad</th>
+                                <th width="45%">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td width="45%">
+                                    <p id="mostrar-nombres"></p>
+                                </td>
+                                <td width="45%">
+                                    <p id="mostrar-cantidad"></p>
+                                </td>
+                                <td width="45%">
+                                    <p id="mostrar-precio"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <div class="border-top px-4 mx-3"> </div>
 
@@ -264,17 +263,17 @@ if (!empty($_POST)) {
                         Descripción del<br> Proyecto:
                     </h4>
                     <p class="stext-107 cl7 size-201">
-                    Proyecto en el cual desarrollaremos un Apirest de tipo E-COMERCE y lo consumiremos mediante un fronent
+                        Proyecto en el cual desarrollaremos un Apirest de tipo E-COMERCE y lo consumiremos mediante un fronent
                     </p>
                 </div>
 
                 <div class="col-sm col-lg p-b-50" style="max-width:25%">
                     <h4 class="stext-301 cl0 p-b-30">
-                    Contáctanos: 
+                        Contáctanos:
                     </h4>
 
                     <p class="stext-107 cl7 size-201">
-                    ¿Alguna Pregunta? Si necesita ayuda contáctenos en nuestra página  de Facebook, Instagram y Twitter
+                        ¿Alguna Pregunta? Si necesita ayuda contáctenos en nuestra página de Facebook, Instagram y Twitter
                     </p>
 
                     <div class="p-t-27">
