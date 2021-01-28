@@ -24,7 +24,7 @@ function obtener_pedido() {
         idusuario: document.getElementById("idusuario").value,
         iva: 'true',
         metododepago: JSON.parse(localStorage.getItem('pago')).metodo,
-        preciototal: (document.getElementById('mostrar-total-final').textContent).substring(2),
+        preciototal: (document.getElementById('mostrar-total-final').textContent).substring(1),
         estado: '1'
     };
     return (pedarreglado);
