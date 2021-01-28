@@ -1,5 +1,8 @@
 <?php require_once("../../Config/Config.php"); ?>
 <script>
+    const base_url = "<?= base_url(); ?>";
+</script>
+<script>
     //   const base_url = "< ?= base_url(); ?>";
     </script>
     <!-- Essential javascripts for application to work-->
