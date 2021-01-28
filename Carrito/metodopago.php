@@ -73,7 +73,7 @@ if (!empty($_POST)) {
     <header>
         <div class="container">
             <div class="row justify-content-between mb-5">
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg3">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -351,7 +351,7 @@ if (!empty($_POST)) {
     <footer class="bg3 p-t-75 p-b-32">
         <div class="container">
             <div class="row">
-                <div class="col-sm col-lgF p-b-50" style="max-width:25%">
+                <div class="col-sm col-lg p-b-50" style="max-width:30%">
                     <h4 class="stext-301 cl0 p-b-30">
                         Integrantes
                     </h4>
@@ -366,7 +366,7 @@ if (!empty($_POST)) {
                     </p>
                 </div>
 
-                <div class="col-sm col-lg p-b-50" style="max-width:25%">
+                <div class="col-sm col-lg p-b-50" style="max-width:30%">
                     <h4 class="stext-301 cl0 p-b-30">
                         Descripción del<br> Proyecto:
                     </h4>
@@ -375,7 +375,7 @@ if (!empty($_POST)) {
                     </p>
                 </div>
 
-                <div class="col-sm col-lg p-b-50">
+                <div class="col-sm col-lg p-b-50" style="max-width:30%">
                     <h4 class="stext-301 cl0 p-b-30">
                     Contáctanos: 
                     </h4>

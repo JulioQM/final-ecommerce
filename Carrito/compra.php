@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="../Assets/css/tienda/bootstrap.min.css">
     <link rel="stylesheet" href="../Assets/css/tienda/estilo.css">
+
     <script src="../Assets/js/tienda/popper.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -19,7 +20,7 @@
     <header>
         <div class="container">
             <div class="row justify-content-between mb-5">
-                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <nav class="navbar navbar-expand-md navbar-dark fixed-top bg3">
                     <!-- <a class="navbar-brand" href="../index.php">E-COMMERCE</a>
                     < ?php
                     session_start();
@@ -137,7 +138,7 @@
     <footer class="bg3 p-t-75 p-b-32">
         <div class="container">
             <div class="row">
-                <div class="col-sm col-lg p-b-50" style="max-width:25%">
+                <div class="col-sm col-lg p-b-50" style="max-width:30%">
                     <h4 class="stext-301 cl0 p-b-30">
                         Integrantes
                     </h4>
@@ -152,7 +153,7 @@
                     </p>
                 </div>
 
-                <div class="col-sm col-lg p-b-50" style="max-width:25%">
+                <div class="col-sm col-lg p-b-50" style="max-width:30%">
                     <h4 class="stext-301 cl0 p-b-30">
                         Descripción del<br> Proyecto:
                     </h4>
@@ -161,7 +162,7 @@
                     </p>
                 </div>
 
-                <div class="col-sm col-lg p-b-50" style="max-width:25%">
+                <div class="col-sm col-lg p-b-50" style="max-width:30%">
                     <h4 class="stext-301 cl0 p-b-30">
                     Contáctanos: 
                     </h4>
