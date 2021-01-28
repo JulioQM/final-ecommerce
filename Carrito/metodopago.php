@@ -237,7 +237,7 @@ if (!empty($_POST)) {
                                             <h6><br>Ingrese número de comprobante de pago</h6>
                                         </label> <input type="text" name="numero" id="comprobante" placeholder="Ingrese número de comprobante" maxlength="15" required class="form-control "> </div>
                                     <form action="datosImagen.php" method="post" enctype="multipart/form-data">
-                                        <h6><br>Fotografia del comprobante</h6>
+                                        <h6><br>Fotografía del comprobante</h6>
                                         <input type="file" id="filet" name="imagen" size="20"><br><br>
                                         
 
@@ -256,19 +256,19 @@ if (!empty($_POST)) {
                                     <div class="form-group "> <label for="cbbPlazo">
                                             <h6>Seleccione el plazo del crédito directo</h6>
                                         </label> <select class="form-control" id="plazo" >
-                                            <option value="0" selected disabled>--Porfavor elija un plazo--</option>
-                                            <option value="1">3 meses sin interes</option>
-                                            <option value="2">6 meses sin interes</option>
-                                            <option value="3">9 meses sin interes</option>
-                                            <option value="4">12 meses mas interes</option>
-                                            <option value="5">24 meses mas interes</option>
+                                            <option value="0" selected disabled>--Por favor elija un plazo--</option>
+                                            <option value="1">3 meses sin interés</option>
+                                            <option value="2">6 meses sin interés</option>
+                                            <option value="3">9 meses sin interés</option>
+                                            <option value="4">12 meses mas interés</option>
+                                            <option value="5">24 meses mas interés</option>
 
                                         </select> </div>
                                     <div class="form-group">
                                         <a > <button type="button" id="boton-credito" class="btn btn-primary "><i class="fab fa-cc-amex"></i> Proceder al pago</button> </a>
 
                                     </div>
-                                    <p class="text-muted">Nota: Al hacer click en el boton "Proceder al pago" esta automaticamente aceptando los terminos y condiciones de la empresa, los cuales nos permiten acceder a sus datos personales. </p>
+                                    <p class="text-muted">Nota: Al hacer click en botón "Proceder al pago" esta automáticamente aceptando los términos y condiciones de la empresa, los cuales nos permiten acceder a sus datos personales. </p>
                                 </div> <!-- End -->
                                 <!-- End -->
                             </div>
