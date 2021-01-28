@@ -1,0 +1,103 @@
+/*Metodo en el cual configurara el cuerpo del html */
+body{
+    margin: 0;/*Configuracion del margen */
+    padding: 0;/*Configuracion del relleno*/
+    background: url(https://www.masdigital.net/hubfs/Blog/tips-impulsar-ecommerce-1.jpg) no-repeat center top;/*Configuracion del fondo de pantalla*/
+    background-size: cover;
+    font-family: sans-serif;/*Fuente de texto*/
+    height: 100vh;/*Ajusta la altura de la pagina ajustando a la foto del fondo de pantalla*/
+}
+/*Metodo en el cual configurara el div llamado login-box*/
+.login-box{
+    width: 320px;/*Ajusta la altura  */
+    height: 420px;/*Ajusta la anchura  */
+    background-color: #ffffff;/*Ajusta El color del fondo de pantalla  */
+    color:#333131;/*Ajusta el color del texto */
+    top: 15%;/*Se desplaza un 15% hacia arriba  */
+    left: 37%;/*Se desplaza un 15% hacia la izquierda */
+    position: absolute;/*Ajuste de la posicion:absoluta */
+    box-sizing: border-box;/*Configuracion del tamaño de la caja*/
+    padding: 60px 30px;/*Ajuste del relleno*/
+    border-radius: 5%;/*Ajusta los bordes de la caja */
+
+}
+/*Metodo en el cual configurara la imagen que esta dentro del div login-box*/
+.login-box .avatar{
+    width: 140px;/*Ajusta la altura  */
+    height: 140px;/*Ajusta la anchura  */
+    border-radius: 50%;/*Ajusta los bordes de la caja */
+    position: absolute;/*Ajuste de la posicion:absoluta */
+    top: -50px;/*Se desplaza un -50px hacia arriba  */
+    left: calc(50% - 70px) ;/*Aqui calcula el 50% de desplazamiento hacia arriba y le resta  70px lo cual sera la posicion recorrera la caja hacia la izquierda */
+}
+/*Metodo en el cual configurara el h1  que esta dentro del div login-box*/
+.login-box h1{
+    margin: 0;/*Ajuste de margen*/
+    padding: 35px 0 20px;/*Ajuste de relleno*/
+    text-align: center;/*Ajuste del texto en dond eestara posicionado*/
+    font-size: 22px;/*Ajuste del tamaño de letra*/
+}
+/*Metodo en el cual configurara el label  que esta dentro del div login-box*/
+.login-box label{
+    margin: 0;/*Ajuste de margen*/
+    padding: 0;/*Ajuste de relleno*/
+    font-weight: bold;/*Ajuste de la fuente de letra*/
+    display: block;/*Ajuste del desplazamiento de los labels*/
+
+}
+/*Metodo en el cual configurara el input que esta dentro del div login-box*/
+.login-box input{
+    width: 100%;/*Ajuste de anchura*/
+    margin-bottom: 20px;/*Ajuste del margen de abajo del input*/
+
+}
+/*Metodo en el cual configurara el input del tipo text y password que esta dentro del div login-box*/
+.login-box input[type="text"],
+.login-box input[type="password"]{
+    border: none;/*Configuracion del borde*/
+    border-bottom:1px solid #333131;/*Ajuste del margen de abajo del input*/
+    background: transparent;/*Fondo transparente*/
+    outline: none;/*No haya sublineas*/
+    height: 40px;/*Ajuste de altura*/
+    color: #000000;/*Ajuste del color de letra*/
+    font-size: 16px;/*Ajuste del tamaño de letra*/
+}
+/*Metodo en el cual configurara el input del tipo submit que esta dentro del div login-box*/
+.login-box input[type="submit"]{
+
+    border: none;/*Configuracion del borde*/
+    outline: none;/*No haya sublineas*/
+    height: 40px;/*Ajuste de altura*/
+    background-color:#3b83bd;/*Ajuste del color del submit*/
+    color: #ffffff;/*Ajuste del color de letra*/
+    font-size: 18px;/*Ajuste del tamaño de letra*/
+    border-radius: 20px;/*Ajuste del radio de bordes del submit*/
+    cursor: pointer;
+}
+.login-box input[type="submit"]:hover {
+    background-color: #5e9acecc;
+}
+a:link, a:visited {
+  background-color: #3b83bd;
+  border: none;/*Configuracion del borde*/
+  outline: none;/*No haya sublineas*/
+  color: white;
+
+  padding: 14px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+a:hover, a:active {
+  background-color: #252850;
+}
+
+.alert {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #b31f1f;
+    margin-bottom: 10px;
+}
