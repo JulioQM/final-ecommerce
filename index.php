@@ -156,8 +156,8 @@
     </br>
     </br>
     <footer class="bg3 p-t-75 p-b-32">
-        <div class="containerF">
-            <div class="rowF">
+        <div class="container">
+            <div class="row">
                 <div class="col-smF col-lg-F p-b-50">
                     <h4 class="stext-301 cl0 p-b-30">
                         Integrantes

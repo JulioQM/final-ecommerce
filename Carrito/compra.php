@@ -154,20 +154,20 @@
 
                 <div class="col-smF col-lg-F p-b-50">
                     <h4 class="stext-301 cl0 p-b-30">
-                        Descripcion del<br> Proyecto:
+                        Descripción del<br> Proyecto:
                     </h4>
                     <p class="stext-107 cl7 size-201">
-                        Proyecto en el cual crearemos un Apirest E-COMERCE y lo consumiremos mediante un fronent
+                        Proyecto en el cual desarrollaremos un Apirest E-COMERCE y lo consumiremos mediante un fronent
                     </p>
                 </div>
 
                 <div class="col-smF col-lg-F p-b-50">
                     <h4 class="stext-301 cl0 p-b-30">
-                        Contactanos:
+                    Contáctanos: 
                     </h4>
 
                     <p class="stext-107 cl7 size-201">
-                        ¿Alguna Pregunta? Si necesita ayuda contactenos en nuestra pag de Facebook, Instagram y Twitter
+                    ¿Alguna Pregunta? Si necesita ayuda, contáctenos en nuestra página de Facebook, Instagram y o Twitter
                     </p>
 
                     <div class="p-t-27">
@@ -192,7 +192,7 @@
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;<script>
                     document.write(new Date().getFullYear());
-                </script> All rights reserved | This project is made for the group 7
+                </script> All rights reserved | Proyecto desarrollado por el grupo 7
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
             </p>
