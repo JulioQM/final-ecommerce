@@ -51,13 +51,14 @@ function post_detallePedido() {
             ;
 
     }
-    swal({
-        title: "Compra",
-        text: "Su compra se ha realizado con éxito!",
-        type: "success",
-    }, function () {
-        window.location.href("../index.php");
-    });
+    window.location.href("../index.php");
+    // swal({
+    //     title: "Compra",
+    //     text: "Su compra se ha realizado con éxito!",
+    //     type: "success",
+    // }, function () {
+    //     window.location.href("../index.php");
+    // });
 
 }
 
