@@ -63,13 +63,13 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
 
         var idPubli = document.querySelector('#idPublicidad').value;
-        var intIdPublicidad = document.querySelector('#txtPublicidad').value;
+        // var intIdPublicidad = document.querySelector('#txtPublicidad').value;
         var strTitulo = document.querySelector('#txtTitulo').value;
         var strDescripcion = document.querySelector('#txtDescripcion').value;
         var intEstado = document.querySelector('#listStatus').value;
         var strImagen = document.querySelector('#txtImagen').value;
 
-        if (intIdPublicidad == '' || strTitulo == '' || strDescripcion == '' || intEstado == '' || strImagen == '') {
+        if (strTitulo == '' || strDescripcion == '' || intEstado == '' || strImagen == '') {
             swal("Atención", "Todos los campos son obligatorios.", "error");
             return false;
         }
@@ -222,7 +222,7 @@ function fntEditPublicidad(idpublicidad) {
     document.querySelector('#btnActionForm').classList.replace("btn-primary", "btn-info");
     document.querySelector('#btnText').innerHTML = "Actualizar";
     $('#btnActionForm').attr('style', 'background: #2970bdd5; border-color: #4d84bed5;');
-    $("#txtPublicidad").prop('disabled', true);
+    // $("#txtPublicidad").prop('disabled', true);
 
     var idpublicidad = idpublicidad;
     var request = new XMLHttpRequest();
@@ -238,7 +238,7 @@ function fntEditPublicidad(idpublicidad) {
             // console.log(objData[0].titulo);
 
             document.querySelector('#idPublicidad').value = objData[0].idpublicidad; 
-            document.querySelector('#txtPublicidad').value = objData[0].idpublicidad; 
+            // document.querySelector('#txtPublicidad').value = objData[0].idpublicidad; 
             document.querySelector('#txtTitulo').value = objData[0].titulo; 
             document.querySelector('#txtDescripcion').value = objData[0].descripcion;
             document.querySelector('#listStatus').value = objData[0].estado;
@@ -330,7 +330,7 @@ function openModalPublicidad() {
     document.querySelector('#titleModal').innerHTML = "Nueva Publicidad";
     document.querySelector('#formPublicidad').reset();
     $('#btnActionForm').attr('style', 'background: #009688; border-color: none;');
-    $("#txtPublicidad").prop('disabled', false);
+    // $("#txtPublicidad").prop('disabled', false);
     $('#modalFormPublicidad').modal('show');
     // removePhoto();
 }

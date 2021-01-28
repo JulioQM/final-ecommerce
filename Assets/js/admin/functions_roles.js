@@ -37,10 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log(JSON.stringify(formDataToJSON()));
 
         var idRol = document.querySelector('#idRol').value;
-        var intIdRol = document.querySelector('#txtIdRol').value;
+        // var intIdRol = document.querySelector('#txtIdRol').value;
         var strRol = document.querySelector('#txtRol').value;
 
-        if (intIdRol == '' || strRol == '') {
+        if (strRol == '') {
             swal("Atención", "Todos los campos son obligatorios.", "error");
             return false;
         }
@@ -166,7 +166,7 @@ function fntEditRol(idrol) {
     document.querySelector('#btnActionForm').classList.replace("btn-primary", "btn-info");
     document.querySelector('#btnText').innerHTML = "Actualizar";
     $('#btnActionForm').attr('style', 'background: #2970bdd5; border-color: #4d84bed5;');
-    $("#txtIdRol").prop('disabled', true);
+    // $("#txtIdRol").prop('disabled', true);
 
     var idrol = idrol;
     var request = new XMLHttpRequest();
@@ -181,7 +181,7 @@ function fntEditRol(idrol) {
             var objData = JSON.parse(request.responseText);
 
             document.querySelector('#idRol').value = objData[0].idrol;
-            document.querySelector('#txtIdRol').value = objData[0].idrol;
+            // document.querySelector('#txtIdRol').value = objData[0].idrol;
             document.querySelector('#txtRol').value = objData[0].rol;
             document.querySelector('#listStatus').value = objData[0].estado;
 
@@ -258,7 +258,7 @@ function openModalRol() {
     document.querySelector('#titleModal').innerHTML = "Nuevo Rol";
     document.querySelector('#formRol').reset();
     $('#btnActionForm').attr('style', 'background: #009688; border-color: none;');
-    $("#txtIdRol").prop('disabled', false);
+    // $("#txtIdRol").prop('disabled', false);
     $('#modalFormRol').modal('show');
 }
 

@@ -33,13 +33,13 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault();
 
         var idUser = document.querySelector('#idUser').value;
-        var intIdUsuario = document.querySelector('#txtIdUsuario').value;
+        // var intIdUsuario = document.querySelector('#txtIdUsuario').value;
         var strNombre = document.querySelector('#txtNombre').value;
         var strCorreo = document.querySelector('#txtCorreo').value;
         var StrUsuario = document.querySelector('#txtUsuario').value;
         var strPassw = document.querySelector('#txtPassword').value;
 
-        if (intIdUsuario == '' || strNombre == '' || strCorreo == '' || StrUsuario == '' || strPassw == '') {
+        if (strNombre == '' || strCorreo == '' || StrUsuario == '' || strPassw == '') {
             swal("Atención", "Todos los campos son obligatorios.", "error");
             return false;
         }
@@ -167,7 +167,7 @@ function fntEditUsuario(idPersona) {
     document.querySelector('#btnActionForm').classList.replace("btn-primary", "btn-info");
     document.querySelector('#btnText').innerHTML = "Actualizar";
     $('#btnActionForm').attr('style', 'background: #2970bdd5; border-color: #4d84bed5;');
-    $("#txtIdUsuario").prop('disabled', true);
+    // $("#txtIdUsuario").prop('disabled', true);
 
     var idPersona = idPersona;
     var request = new XMLHttpRequest();
@@ -182,7 +182,7 @@ function fntEditUsuario(idPersona) {
             var objData = JSON.parse(request.responseText);
 
             document.querySelector('#idUser').value = objData[0].idusuario;
-            document.querySelector('#txtIdUsuario').value = objData[0].idusuario;
+            // document.querySelector('#txtIdUsuario').value = objData[0].idusuario;
             document.querySelector('#listRol').value = objData[0].idrol;
             document.querySelector('#txtNombre').value = objData[0].nombre;
             document.querySelector('#txtCorreo').value = objData[0].correo;
@@ -264,7 +264,7 @@ function openModalUser() {
     document.querySelector('#titleModal').innerHTML = "Nuevo Usuario";
     document.querySelector('#formUsuario').reset();
     $('#btnActionForm').attr('style', 'background: #009688; border-color: none;');
-    $("#txtIdUsuario").prop('disabled', false);
+    // $("#txtIdUsuario").prop('disabled', false);
     $('#modalFormUsuario').modal('show');
 }
 
