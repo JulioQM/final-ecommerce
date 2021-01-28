@@ -81,7 +81,7 @@
     <main>
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 my-4 mx-auto ">
 
-            <h1 class="tituloOferta">Últimas Ofertas</h1>
+            <h1 class="tituloOferta">Últimas Ofertas M</h1>
             <br>
             <div class="slideshow-container">
 
