@@ -173,7 +173,7 @@
                     </p>
                 </div>
 
-                <div class="col-smF col-lg p-b-50">
+                <div class="col-sm col-lg p-b-50">
                     <h4 class="stext-301 cl0 p-b-30">
                         Descripción del<br> Proyecto:
                     </h4>

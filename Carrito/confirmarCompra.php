@@ -244,7 +244,7 @@ if (!empty($_POST)) {
     <footer class="bg3 p-t-75 p-b-32">
         <div class="container">
             <div class="row">
-                <div class="col-sm col-lgF p-b-50">
+                <div class="col-sm col-lg p-b-50" style="max-width:25%">
                     <h4 class="stext-301 cl0 p-b-30">
                         Integrantes
                     </h4>
@@ -259,7 +259,7 @@ if (!empty($_POST)) {
                     </p>
                 </div>
 
-                <div class="col-smF col-lg p-b-50">
+                <div class="col-sm col-lg p-b-50" style="max-width:25%">
                     <h4 class="stext-301 cl0 p-b-30">
                         Descripción del<br> Proyecto:
                     </h4>
@@ -268,7 +268,7 @@ if (!empty($_POST)) {
                     </p>
                 </div>
 
-                <div class="col-smF col-lg p-b-50">
+                <div class="col-sm col-lg p-b-50" style="max-width:25%">
                     <h4 class="stext-301 cl0 p-b-30">
                     Contáctanos: 
                     </h4>
