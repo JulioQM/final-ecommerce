@@ -135,7 +135,7 @@ if (!empty($_POST)) {
                     $id = intval($idpedido) + 1;
 
                     echo "  <div class='py-4 d-flex flex-row'>
-                    <h4>ID Pedido::</h4>
+                    <h4>ID Pedido:</h4>
                     <h4 class='green'>  $id </h4>
                 </div>";
                 }
