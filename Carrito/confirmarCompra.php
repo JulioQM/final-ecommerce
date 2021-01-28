@@ -183,7 +183,7 @@ if (!empty($_POST)) {
                     
 
                     </form>
-                    <div> <input type="button" value="Proceder con el pago" onclick="post_detallePedido()" class="btn btn-primary btn-block"> </div>
+                    <div> <a href="../index.php" type="button" value="Proceder con el pago" onclick="post_detallePedido()" class="btn btn-primary btn-block"></a> </div>
                 </div>
             </div>
             <div class="col-sm-3 col-md-4 offset-md-1 mobile" style="margin-left: 50px;">

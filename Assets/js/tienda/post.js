@@ -51,7 +51,7 @@ function post_detallePedido() {
             ;
 
     }
-    location.href("../index.php");
+    // location.href("../index.php");
     // swal({
     //     title: "Compra",
     //     text: "Su compra se ha realizado con éxito!",
@@ -64,7 +64,7 @@ function post_detallePedido() {
 
 
 function post_pedido() {
-    console.log(JSON.stringify(obtener_pedido()));
+    // console.log(JSON.stringify(obtener_pedido()));
     fetch("https://ecommerce-api-rest-2021.herokuapp.com/Pedidos", {
 
         method: "POST",
