@@ -127,7 +127,7 @@ if (!empty($_POST)) {
         <div class="row d-flex justify-content-center pb-5" style="margin-left: 0px; margin-right: 0px; width: 1000px;">
             <div class="col-sm-5 col-md-5 ml-1" style="margin-left: 0px;padding-left: 10px;width: 425px;">
                 <div class="py-4 d-flex flex-row">
-                    <h5><span class="fa fa-check-square-o"></span><b>COZA</b> STORE | </h5><span class="pl-2">Pago</span>
+                    <h5><span class="fa fa-check-square-o"></span><b>E</b>-COMMERCE | </h5><span class="pl-2">Pago</span>
                 </div>
                 <?php
                 foreach ($datosPedido as $row => $value) {
