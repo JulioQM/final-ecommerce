@@ -72,7 +72,7 @@ $total 		= 0;
 			</tr>
 		</table>
 		<!-- <table id="factura_cliente">
-			<!-- <tr>
+			<!- <tr>
 				<td class="info_cliente">
 					<div class="round">
 						<span class="h3">Cliente</span>
@@ -85,7 +85,7 @@ $total 		= 0;
 									<p>juanperes@@gmail.com</p>
 								</td>
 							</tr>
-							<!-- <tr>
+							<!- <tr>
 								<td><label>Cedula:</label>
 									<p>< ?php echo $factura['cedula']; ?></p>
 								</td>

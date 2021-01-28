@@ -34,7 +34,7 @@
 			$detalle = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos/bypedido/".$pedido), true);
 
 			ob_start();
-		    include(dirname('__FILE__').'/factura.php');
+		    require_once(dirname('__FILE__').'/factura.php');
 		    $html = ob_get_clean();
 
 			// instantiate and use the dompdf class
@@ -48,6 +48,7 @@
 			$dompdf->stream('factura_'.$codPedido.'.pdf',array('Attachment'=>0));
 			exit;
 		}
+		
 	}
 
 ?>
