@@ -110,15 +110,19 @@ function confirmarPagoC(c) {
     añot = document.getElementById("selectAño").value;
     cvvt = document.getElementById("cvvTarjeta").value;
 
+    if(numerot === "" || nombret === "" || mest === "" || añot === "" || cvvt === ""){
+        alert("Complete todos los campos")
+    }else{
+        if (validar_tarjeta()) {
 
-    if (validar_tarjeta()) {
-
-        guardar_pago_tarjeta();
-        c.preventDefault();
-
-        location.href = "./confirmarCompra.php";
+            guardar_pago_tarjeta();
+            c.preventDefault();
+            
+            location.href = "./confirmarCompra.php";
+        }else{
+            alert("Datos erróneos");
+        }
     }
-
 
 }
 
