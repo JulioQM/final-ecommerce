@@ -46,7 +46,10 @@ require_once("../Template/nav.php");
 
                                 $detalle = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos"), true);
                                 // $detalle = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos"), true);
-
+                                
+                                
+                                //****************** <button class='btn btn-primary' onclick='mostrarDetalle()' type='button'><i class='fas fa-plus-circle'></i> Mostrar Detalle</button>
+                                //****************** style='display: none;'
                                 for ($i = 0; $i < count($cabecera); $i++) {
                                     $idpedido=$cabecera[$i]['idpedido'];
                                     echo "<tr>";
@@ -54,7 +57,7 @@ require_once("../Template/nav.php");
                                     echo "<td id='idcliente'>" . $cabecera[$i]["idusuario"] . "</td>";
                                     echo "<td>" . date("d/m/Y", strtotime($cabecera[$i]["fechapedido"])) . "</td>";
                                     echo "<td>
-                                            <table>
+                                            <table id='detalle_ped' >
                                                 <thead>
                                                     <tr>
                                                         <th>Cod Producto</th>

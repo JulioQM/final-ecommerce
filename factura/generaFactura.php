@@ -23,7 +23,7 @@
 		$anulada = '';
 
 		// $data = json_decode(file_get_contents("http://192.168.0.108:3000/PedidoCabecera/".$codCliente."-".$codPedido), true);
-		$data = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/PedidoCabecera/".$codCliente."-".$codPedido), true);
+		$data = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/PedidoCabecera/".$codPedido."-".$codCliente), true);
 
 
 		if($data > 0){
@@ -31,7 +31,7 @@
 			$pedido = $data[0]['idpedido'];
 			
 			// $detalle = json_decode(file_get_contents("http://192.168.0.108:3000/PedidoDetalle/".$pedido), true);
-			$detalle = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos/bypedido/".$codPedido), true);
+			$detalle = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos/bypedido/".$pedido), true);
 
 			ob_start();
 		    include(dirname('__FILE__').'/factura.php');
