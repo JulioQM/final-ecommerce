@@ -191,7 +191,7 @@ if (!empty($_POST)) {
                                 <!-- Transaccion info -->
                                 <div id="paypal" class="tab-pane fade pt-5">
                                     <h6 class="pb-2">Seleccione el banco</h6>
-                                    <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked> Pichincha </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">Pacifico </label></div> <label class="radio-inline"> <input type="radio" name="optradio" checked> Otros </label>
+                                    <div class="form-group "> <label class="radio-inline"> <input type="radio" name="optradio" checked> Pichincha </label> <label class="radio-inline"> <input type="radio" name="optradio" class="ml-5">Pacífico </label></div> <label class="radio-inline"> <input type="radio" name="optradio" checked> Otros </label>
 
                                     <hr>
                                     <div>

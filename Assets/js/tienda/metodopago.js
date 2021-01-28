@@ -217,7 +217,7 @@ function guardar_pago_tarjeta() {
 
 
     let pago = {
-        metodo: 'Tarjeta de credito',
+        metodo: 'Tarjeta de crédito',
         nombre: nombret,
         numero: numerot.substring(0,4)+'XXXX XXXX '+numerot.substring(15,19),
 
