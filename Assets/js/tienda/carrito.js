@@ -157,7 +157,7 @@ class Carrito {
                 <td>${producto.titulo}</td>
                 <td>${producto.precio}</td>                
                 <td>
-                    <input type="number" class="form-control cantidad" min="1" max=${producto.stock} value=${producto.cantidad}>
+                    <input type="number" onkeydown="javascript: return event.keyCode === 8 || event.keyCode === 46 ? true : !isNaN(Number(event.key))" class="form-control cantidad" min="1" max=${producto.stock} value=${producto.cantidad}>
                 </td>
                 <td id='subtotales'>${producto.precio * producto.cantidad}</td>
                 <td>${producto.stock}</td>
