@@ -15,10 +15,10 @@
                     <input type="hidden" name="idRol" id="idRol" value="">
                     <p class="text-primary">Todos los campos son obligatorios.</p>
                     <div class="form-row">
-                        <div class="form-group col-md-12">
+                        <!-- <div class="form-group col-md-12">
                             <label for="txtIdRol">Id Rol</label>
                             <input type="text" class="form-control" id="txtIdRol" name="idrol" required>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-12">

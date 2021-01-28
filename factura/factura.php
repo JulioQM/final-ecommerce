@@ -5,9 +5,13 @@ $impuesto 	= 0;
 $tl_sniva   = 0;
 $total 		= 0;
 
-require_once("./generaFactura.php");
-// $data = json_decode(file_get_contents("http://192.168.0.108:3000/PedidoCabecera/".$codCliente."-".$codPedido), true);
-print_r($data); 
+// require_once("./generaFactura.php");
+// $data = json_decode(file_get_contents("http://192.168.0.108:3000/PedidoCabecera/3-3"), true);
+// $detalle = json_decode(file_get_contents("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos/bypedido/3"), true);
+
+// print_r($data); 
+// print_r($detalle); 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +28,7 @@ print_r($data);
 	<div id="page_pdf">
 		<table id="factura_head">
 			<tr>
-				<td class="logo_factura" >
+				<td class="logo_factura">
 					<div>
 						<img src="img/logo.png">
 					</div>
@@ -34,24 +38,23 @@ print_r($data);
 					// if ($result_config > 0) {
 					// 	$iva = $configuracion['iva'];
 					?>
-					<!-- <div style="width: 50%; margin-left: 25%;">  -->
-					<div class="title-head"> 
-						<span class="h2" >E-COMMERCE</span>
-						<p >Ibarra - Sector el Olivo</p>
-						<p >RUC: 0031004048144</p>
-						<p >Teléfono: 0991929394</p>
-						<p >Email: ecommerce@gmail.com</p>
+					<div class="title-head">
+						<span class="h2">E-COMMERCE</span>
+						<p>Ibarra - Sector el Olivo</p>
+						<p>RUC: 0031004048144</p>
+						<p>Teléfono: 0991929394</p>
+						<p>Email: ecommerce@gmail.com</p>
 					</div>
 					<br><br>
 					<div class="title-head round">
 						<span class="h3">Factura</span>
-						<p >No. Factura: <strong><?= $data['idpedido']; ?></strong></p>
-						<p >Fecha: <?= $data[0]['fecha']; ?></p>
-						<p >Hora: <? $data[0]['hora'];?></p>
+						<p>No. Factura: <strong><?= $data[0]['idpedido']; ?></strong></p>
+						<p>Fecha: <?= $data[0]['fecha']; ?></p>
+						<p>Hora: <?= $data[0]['hora']; ?></p>
 					</div>
 					<br><br>
-					<div class="title-head round">
-						<span class="h3" >Cliente</span>
+					<div class="title-head round" style="width: 70%; margin-left: 15%;">
+						<span class="h3">Cliente</span>
 						<table class="datos_cliente">
 							<thead>
 								<tr>
@@ -74,42 +77,14 @@ print_r($data);
 
 			</tr>
 		</table>
-		<!-- <table id="factura_cliente">
-			<!-- <tr>
-				<td class="info_cliente">
-					<div class="round">
-						<span class="h3">Cliente</span>
-						<table class="datos_cliente">
-							<tr>
-								<td><label>Nombre:</label>
-									<p>Juan Peres</p>
-								</td>
-								<td><label>Correo:</label>
-									<p>juanperes@@gmail.com</p>
-								</td>
-							</tr>
-							<!-- <tr>
-								<td><label>Cedula:</label>
-									<p>< ?php echo $factura['cedula']; ?></p>
-								</td>
-								<td><label>Teléfono:</label>
-									<p>< ?php echo $factura['telefono']; ?></p>
-								</td>
-							</tr> -- >
-						</table>
-					</div>
-				</td>
-
-			</tr> -- >
-		</table> -->
 
 		<table id="factura_detalle">
 			<thead>
 				<tr>
-					<th class="textcenter" width="100px" >Cantidad</th>
+					<th class="textcenter" width="100px">Cantidad</th>
 					<th class="textcenter">Descripción</th>
-					<th class="textcenter" width="150px"  >Precio Unitario.</th>
-					<th class="textcenter" width="150px"  > Precio Total</th>
+					<th class="textcenter" width="150px">Precio Unitario.</th>
+					<th class="textcenter" width="150px"> Precio Total</th>
 				</tr>
 			</thead>
 			<tbody id="detalle_productos">
@@ -117,30 +92,23 @@ print_r($data);
 				<?php
 
 				if ($detalle > 0) {
-
-				// 	while ($row = mysqli_fetch_assoc($query_productos)) {
+					foreach ($detalle as $row => $det) {
 				?>
-						<tr >
-							<td>4</td>
-							<td class="textledft">teclado Genius</td>
-							<td>1.45</td>
-							<td>5.8</td>
+						<tr>
+							<td><?= $det['cantidad'] ?></td>
+							<td class="textledft"><?= $det['codproducto'] ?></td>
+							<td><?= $det['preciounitario'] ?></td>
+							<td><?= $det['subtotalunit'] ?></td>
 						</tr>
-						
-						<!-- <tr>
-							<td class="textcenter">< ?php echo $row['cantidad']; ?></td>
-							<td>< ?php echo $row['descripcion']; ?></td>
-							<td class="textright">< ?php echo $row['precio_venta']; ?></td>
-							<td class="textright">< ?php echo $row['precio_total']; ?></td>
-						</tr> -->
+
 				<?php
-				// 		$precio_total = $row['precio_total'];
-				// 		$subtotal = round($subtotal + $precio_total, 2);
-				// 	}
+						// $precio_total = $row['precio_total'];
+						// $subtotal = round($subtotal + $precio_total, 2);
+					}
 				}
 
-				// $impuesto 	= round($subtotal * ($iva / 100), 2);
-				// $tl_sniva 	= round($subtotal - $impuesto, 2);
+				$impuesto 	= round($data[0]['preciototal'] * (0.12), 2);
+				$tl_sniva 	= round($data[0]['preciototal'] - $impuesto, 2);
 				// $total 		= round($tl_sniva + $impuesto, 2);
 				?>
 			</tbody>
@@ -148,20 +116,20 @@ print_r($data);
 				<tr>
 					<td></td>
 					<td></td>
-					<td class="textcenter"><span  >SUBTOTAL Q.</span></td>
-					<td class="textcenter"><span  >5.10</span></td>
+					<td class="textcenter"><span>SUBTOTAL Q.</span></td>
+					<td class="textcenter"><span><?= $tl_sniva ?></span></td>
 				</tr>
 				<tr>
 					<td></td>
 					<td></td>
-					<td class="textcenter"><span  >IVA (12 %)</span></td>
-					<td class="textcenter"><span  >0.70</span></td>
+					<td class="textcenter"><span>IVA (12 %)</span></td>
+					<td class="textcenter"><span><?= $impuesto ?></span></td>
 				</tr>
 				<tr>
 					<td></td>
 					<td></td>
-					<td class="textcenter"><span  >TOTAL Q.</span></td>
-					<td class="textcenter"><span  >5.8</span></td>
+					<td class="textcenter"><span>TOTAL Q.</span></td>
+					<td class="textcenter"><span><?= $data[0]['preciototal'] ?></span></td>
 				</tr>
 			</tfoot>
 		</table>
