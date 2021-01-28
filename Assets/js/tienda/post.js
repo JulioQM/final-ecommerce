@@ -1,8 +1,5 @@
 
-//post_producto()
 
-post_fetch();
-//Obtener detalle pedido
 
 function obtener_producto() {
     if (localStorage.getItem("productos")) {
@@ -10,7 +7,7 @@ function obtener_producto() {
         var arreglado = nombre.map(item => {
             return {
                 idpedido: 1,
-                codproducto: item.id,
+                codproducto: 'prxxa',
                 cantidad: item.cantidad,
                 preciounitario: item.precio,
                 subtotal: parseFloat(item.precio) * item.cantidad
@@ -22,42 +19,60 @@ function obtener_producto() {
         console.log('no hay');
     }
 }
+async function obtener_pedido() {
+    var pedido;
+    let response = await fetch('https://ecommerce-api-rest-2021.herokuapp.com/Pedidos', { method: 'GET' })
+    let result = await response.json();
+    if (result != null) {
 
-function post_fetch() {
-    
+        var pedarreglado = {
+            idusuario: document.getElementById("idusuario").value,
+            idpedido: result[0].idpedido+1,
+            iva: 'true',
+            metododepago: JSON.parse(localStorage.getItem('pago')).metodo,
+            preciototal: document.getElementById('mostrar-total-final').textContent,
+            estado: '1'
+        };
+        console.log(pedarreglado);
+        return(pedarreglado);
+    } else {
+        console.log('no hay');
+    }
+}
+
+
+
+
+function post_detallePedido() {
+
     for (let index = 0; index < Object.keys(obtener_producto()).length; index++) {
         fetch("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos", {
-        
-        method: "POST", 
-        body: JSON.stringify(obtener_producto()[index]),
-        headers:{
-            'Content-Type': 'application/json; charset=utf-8'
-          }
-      }).then(res => res.json())
-      .then(data=> console.log(data))
-      ;
-        
+
+            method: "POST",
+            body: JSON.stringify(obtener_producto()[0]),
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8'
+            }
+            
+        }).then(res => res.json())
+            .then(data => console.log(data))
+            ;
+
     }
-    
+    swal("Compra","Compra realizada con éxito!","success");
+
 }
 
 
+function post_pedido() {
+            fetch("https://ecommerce-api-rest-2021.herokuapp.com/Pedidos", {
 
-function post_productoff() {
-    console.log(obtener_producto());
-    var http = new XMLHttpRequest();
-    var url = "https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos";
-
-    http.open("POST", url, true);
-    http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-
-    http.onreadystatechange = function () {
-        if (http.readyState == 4 && http.status == 200) {
-            //aqui obtienes la respuesta de tu peticion
-            alert(http.responseText);
-        }
-    }
-    http.send(JSON.stringify(obtener_producto));
+            method: "POST",
+            body: JSON.stringify(obtener_pedido()[0]),
+            headers: {
+                'Content-Type': 'application/json; charset=utf-8'
+            }
+        }).then(res => res.json())
+            .then(data => console.log(data))
+            ;
 }
-
-

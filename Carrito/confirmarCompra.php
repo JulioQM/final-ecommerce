@@ -141,7 +141,11 @@ if (!empty($_POST)) {
                 }
                 ?>
 
-
+                <?php 
+                // session_start();
+                $usuario = $_SESSION['idUser'];
+                ?>
+                <input type="hidden" id="idusuario" value="<?php echo $usuario ?>">
 
                 <h4>DETALLE DEL PEDIDO</h4>
                 <div class="d-flex pt-2">
@@ -178,7 +182,7 @@ if (!empty($_POST)) {
                     <form class="pb-3">
 
                     </form>
-                    <div> <input type="button" value="Proceder con el pago" onclick="myFunction()" class="btn btn-primary btn-block"> </div>
+                    <div> <input type="button" value="Proceder con el pago" onclick="post_pedido(),post_detallePedido()" class="btn btn-primary btn-block"> </div>
                 </div>
             </div>
             <div class="col-sm-3 col-md-4 offset-md-1 mobile" style="margin-left: 50px;">
