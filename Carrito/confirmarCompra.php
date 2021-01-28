@@ -109,7 +109,7 @@ if (!empty($_POST)) {
                     if (isset($_SESSION['active'])) {
                     ?>
                         <span class="cliente">< ?php echo $_SESSION['nombre']; ?></span>
-                        <!-- <div class="login-icon">
+                        <!- <div class="login-icon">
                         <a href="../index.php" onclick="vaciarLocalStorage()" id="logout"><i class="fas fa-user"></i></a>
                     </div> -- >
                     < ?php
@@ -127,7 +127,7 @@ if (!empty($_POST)) {
         <div class="row d-flex justify-content-center pb-5" style="margin-left: 0px; margin-right: 0px; width: 1000px;">
             <div class="col-sm-5 col-md-5 ml-1" style="margin-left: 0px;padding-left: 10px;width: 425px;">
                 <div class="py-4 d-flex flex-row">
-                    <h5><span class="fa fa-check-square-o"></span><b>COZA</b> STORE | </h5><span class="pl-2">Pago</span>
+                    <h5><span class="fa fa-check-square-o"></span><b>E</b>-COMMERCE | </h5><span class="pl-2">Pago</span>
                 </div>
                 <?php
                 foreach ($datosPedido as $row => $value) {
@@ -135,7 +135,7 @@ if (!empty($_POST)) {
                     $id = intval($idpedido) + 1;
 
                     echo "  <div class='py-4 d-flex flex-row'>
-                    <h4>ID Pedido:</h4>
+                    <h4>ID Pedido: </h4>
                     <h4 class='green'>  $id </h4>
                 </div>";
                 }
@@ -150,7 +150,7 @@ if (!empty($_POST)) {
                     </div>
 
                 </div>
-                <p>Su orden sera registrada con la siguiente fecha: </p>
+                <p>Su orden será registrada con la siguiente fecha: </p>
                 <div class="rounded bg-light d-flex">
                     <div class="p-2">
                         <script>
@@ -165,10 +165,10 @@ if (!empty($_POST)) {
                 <div class="pt-2">
                     <div class="d-flex">
                         <div>
-                            <p><b>Metodo de pago.</b></p>
+                            <p><b>Método  de pago.</b></p>
                         </div>
                         <div class="ml-auto p-2">
-                            <a href="metodopago.php" class="text-primary"><i class="fa fa-plus-circle text-primary"></i>Ingresar metodo de pago </a>
+                            <a href="metodopago.php" class="text-primary"><i class="fa fa-plus-circle text-primary"></i>Ingresar método de pago </a>
                         </div>
                     </div>
                     <div id="html"></div>
@@ -183,36 +183,37 @@ if (!empty($_POST)) {
             </div>
             <div class="col-sm-3 col-md-4 offset-md-1 mobile" style="margin-left: 50px;">
                 <div class="py-4 d-flex justify-content-end">
-                    
+
                 </div>
                 <div class="bg-light rounded d-flex flex-column">
                     <div class="p-2 ml-3">
                         <h4>Detalle de la orden</h4>
                     </div>
-                    <div class="p-2 d-flex">
-                        <div class="col-5"><b>ID</b></div>
-                        <div class="col-8"><b>Productos</b></div>
-                        <div class="col-5"><b>Cantidad</b></div>
-                        <div class="col-7"><b>Precio</b></div>
-                    </div>
-                    <div class="p-2 d-flex">
-                        <div class="col-5">
-                            <p id="mostrar-id">
-                        </div>
-                        <div class="col-8">
-                            <p id="mostrar-nombres"></p>
-                        </div>
-                        <div class="col-5">
-                            <p id="mostrar-cantidad"></p>
-                        </div>
-                        <div class="col-7">
-                            <p id="mostrar-precio"></p>
-                        </div>
-                        <div class="col-7" style="display: none">
-                        <!-- <div class="col-7"> -->
-                            <p id="mostrar-subTP"></p>
-                        </div>
-                    </div>
+
+                    <table>
+                        <thead>
+                            <tr>
+                                
+                                <th width="45%">Productos</th>
+                                <th width="45%">Cantidad</th>
+                                <th width="45%">Precio</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            
+                                <td width="45%">
+                                    <p id="mostrar-nombres"></p>
+                                </td>
+                                <td width="45%">
+                                    <p id="mostrar-cantidad"></p>
+                                </td>
+                                <td width="45%">
+                                    <p id="mostrar-precio"></p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
                     <div class="border-top px-4 mx-3"> </div>
 
@@ -264,17 +265,17 @@ if (!empty($_POST)) {
                         Descripción del<br> Proyecto:
                     </h4>
                     <p class="stext-107 cl7 size-201">
-                    Proyecto en el cual desarrollaremos un Apirest de tipo E-COMERCE y lo consumiremos mediante un fronent
+                        Proyecto en el cual desarrollaremos un Apirest de tipo E-COMERCE y lo consumiremos mediante un fronent
                     </p>
                 </div>
 
                 <div class="col-sm col-lg p-b-50" style="max-width:30%">
                     <h4 class="stext-301 cl0 p-b-30">
-                    Contáctanos: 
+                        Contáctanos:
                     </h4>
 
                     <p class="stext-107 cl7 size-201">
-                    ¿Alguna Pregunta? Si necesita ayuda contáctenos en nuestra página  de Facebook, Instagram y Twitter
+                        ¿Alguna Pregunta? Si necesita ayuda contáctenos en nuestra página de Facebook, Instagram y Twitter
                     </p>
 
                     <div class="p-t-27">
