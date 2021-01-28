@@ -135,7 +135,7 @@ if (!empty($_POST)) {
                     $id = intval($idpedido) + 1;
 
                     echo "  <div class='py-4 d-flex flex-row'>
-                    <h4>ID Pedido:</h4>
+                    <h4>ID Pedido: </h4>
                     <h4 class='green'>  $id </h4>
                 </div>";
                 }
@@ -150,7 +150,7 @@ if (!empty($_POST)) {
                     </div>
 
                 </div>
-                <p>Su orden sera registrada con la siguiente fecha: </p>
+                <p>Su orden será registrada con la siguiente fecha: </p>
                 <div class="rounded bg-light d-flex">
                     <div class="p-2">
                         <script>
@@ -165,7 +165,7 @@ if (!empty($_POST)) {
                 <div class="pt-2">
                     <div class="d-flex">
                         <div>
-                            <p><b>Metodo de pago.</b></p>
+                            <p><b>Método  de pago.</b></p>
                         </div>
                         <div class="ml-auto p-2">
                             <a href="metodopago.php" class="text-primary"><i class="fa fa-plus-circle text-primary"></i>Ingresar metodo de pago </a>
