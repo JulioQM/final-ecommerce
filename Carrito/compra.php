@@ -138,7 +138,7 @@
     <footer class="bg3 p-t-75 p-b-32">
         <div class="container">
             <div class="row">
-                <div class="col-sm col-lg p-b-50" style="max-width:25%">
+                <div class="col-sm col-lg p-b-50" style="max-width:20%">
                     <h4 class="stext-301 cl0 p-b-30">
                         Integrantes
                     </h4>
@@ -153,7 +153,7 @@
                     </p>
                 </div>
 
-                <div class="col-sm col-lg p-b-50" style="max-width:25%">
+                <div class="col-sm col-lg p-b-50" style="max-width:20%">
                     <h4 class="stext-301 cl0 p-b-30">
                         Descripción del<br> Proyecto:
                     </h4>
@@ -162,7 +162,7 @@
                     </p>
                 </div>
 
-                <div class="col-sm col-lg p-b-50" style="max-width:25%">
+                <div class="col-sm col-lg p-b-50" style="max-width:20%">
                     <h4 class="stext-301 cl0 p-b-30">
                     Contáctanos: 
                     </h4>
