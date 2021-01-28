@@ -51,7 +51,7 @@ function post_detallePedido() {
             ;
 
     }
-    window.location.href("../index.php");
+    location.href("../index.php");
     // swal({
     //     title: "Compra",
     //     text: "Su compra se ha realizado con éxito!",
