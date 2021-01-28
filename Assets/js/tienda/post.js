@@ -51,7 +51,13 @@ function post_detallePedido() {
             ;
 
     }
-    swal("Compra","Su compra se ha realizado con éxito!","success");
+    swal({
+        title: "Compra",
+        text: "Su compra se ha realizado con éxito!",
+        type: "success",
+    }, function () {
+        window.location.href("../index.php");
+    });
 
 }
 

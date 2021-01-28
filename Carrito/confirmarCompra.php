@@ -315,7 +315,7 @@ if (!empty($_POST)) {
     <script src="../Assets/js/tienda/jquery-3.4.1.min.js"></script>
     <script src="../Assets/js/tienda/bootstrap.min.js"></script>
     <!-- <script src="../Assets/js/tienda/sweetalert2.min.js"></script> -->
-    <script src="Assets/js/tienda/sweetalert2.min.js"></script>
+    <script src="../Assets/js/tienda/sweetalert2.min.js"></script>
     <script src="../Assets/js/tienda/carrito.js"></script>
     <script src="../Assets/js/tienda/pedido.js"></script>
     <script src="../Assets/js/tienda/cliente.js"></script>
