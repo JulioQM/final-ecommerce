@@ -193,6 +193,7 @@ if (!empty($_POST)) {
                     <table>
                         <thead>
                             <tr>
+                                <th width="45%">ID</th>
                                 <th width="45%">Productos</th>
                                 <th width="45%">Cantidad</th>
                                 <th width="45%">Precio</th>
@@ -200,6 +201,9 @@ if (!empty($_POST)) {
                         </thead>
                         <tbody>
                             <tr>
+                            <td width="45%">
+                                    <p id="mostrar-id"></p>
+                                </td>
                                 <td width="45%">
                                     <p id="mostrar-nombres"></p>
                                 </td>
