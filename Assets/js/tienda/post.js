@@ -10,7 +10,7 @@ function obtener_producto() {
         var arreglado = nombre.map(item => {
             return {
                 idpedido: 1,
-                codproducto: 'prxxa',
+                codproducto: item.id,
                 cantidad: item.cantidad,
                 preciounitario: item.precio,
                 subtotal: parseFloat(item.precio) * item.cantidad
@@ -29,7 +29,7 @@ function post_fetch() {
         fetch("https://ecommerce-api-rest-2021.herokuapp.com/DetallePedidos", {
         
         method: "POST", 
-        body: JSON.stringify(obtener_producto()[0]),
+        body: JSON.stringify(obtener_producto()[index]),
         headers:{
             'Content-Type': 'application/json; charset=utf-8'
           }
