@@ -74,6 +74,7 @@
                                             <th scope="col">Precio</th>
                                             <th scope="col">Cantidad</th>
                                             <th scope="col">Sub Total</th>
+                                            <th scope="col">Stock</th>
                                             <th scope="col">Eliminar</th>
                                         </tr>
 

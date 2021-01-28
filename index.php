@@ -134,10 +134,11 @@
                             </div>
                             <div class='card-body'>
                                 <img src='$image'  class='card-img-top'>
-                                <h2 class='card-title pricing-card-title precio'>$ <span class=''>$price</span></h2>
+                                <h2 class='card-title pricing-card-title precio' style='color:#B12704;'>$ <span class=''>$price</span></h2>
                                 <ul class='list-unstyled mt-3 mb-4'>
                                     <li><h5>$description</h5></li>
-                                    <li><h5 id='stock'>Stock: $stock</h5></li>
+                                    <li style='color:#007600'>Stock. <h5 id='stock' > $stock</h5></li>
+                                   
                                 </ul>
                                 <a href='' class='btn btn-block btn-primary agregar-carrito' data-id='$id'>Comprar</a>
                             </div>

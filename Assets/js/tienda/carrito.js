@@ -19,6 +19,8 @@ class Carrito {
             titulo: producto.querySelector('h4').textContent,
             precio: producto.querySelector('.precio span').textContent,
             id: producto.querySelector('a').getAttribute('data-id'),
+            //en este apartado llamo al stock
+            stock: producto.querySelector('#stock').textContent,
             cantidad: 1
         }
         let productosLS;
@@ -153,11 +155,12 @@ class Carrito {
                     <img src="${producto.imagen}" width=100>
                 </td>
                 <td>${producto.titulo}</td>
-                <td>${producto.precio}</td>
+                <td>${producto.precio}</td>                
                 <td>
-                    <input type="number" class="form-control cantidad" min="1" value=${producto.cantidad}>
+                    <input type="number" class="form-control cantidad" min="1" max=${producto.stock} value=${producto.cantidad}>
                 </td>
                 <td id='subtotales'>${producto.precio * producto.cantidad}</td>
+                <td>${producto.stock}</td>
                 <td>
                     <a href="#" class="borrar-producto fas fa-times-circle" style="font-size:30px" data-id="${producto.id}"></a>
                 </td>
