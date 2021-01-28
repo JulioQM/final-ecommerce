@@ -28,9 +28,13 @@ function cargarEventos() {
 function realizarCompra(e){
     e.preventDefault()
     
-    location.href = "./metodopago.php";
+    var Total = Number(JSON.parse(localStorage.getItem("pagoTotal")));
+    if(Total>0){
+        location.href = "./metodopago.php";
+    } else {
+        swal("Error","No existen productos","error");
+    }
 }
-
 
 function procesarCompra() {
     // e.preventDefault();

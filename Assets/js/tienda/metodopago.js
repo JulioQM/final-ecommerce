@@ -119,8 +119,8 @@ function confirmarPagoC(c) {
             c.preventDefault();
             
             location.href = "./confirmarCompra.php";
-        }else{
-            alert("Datos erróneos");
+        } else {
+            swal("Error","Ingrese datos del pago.","error");
         }
     }
 
@@ -142,6 +142,8 @@ function confirmarPagoT(t) {
         t.preventDefault();
 
         location.href = "./confirmarCompra.php";
+    } else {
+        swal("Error","Ingrese datos del pago.","error");
     }
 
 
@@ -163,6 +165,8 @@ function confirmarPagoD(d) {
         d.preventDefault();
 
         location.href = "./confirmarCompra.php";
+    } else {
+        swal("Error","Ingrese datos del pago.","error");
     }
 
 
