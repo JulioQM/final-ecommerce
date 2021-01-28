@@ -55,7 +55,7 @@ p, label, span, table{
 }
 .title-head > span, 
 .title-head > p {
-	font-size: 13pt;
+	font-size: 10pt;
 }
 .info_factura{
 	width: 25%;
@@ -70,7 +70,7 @@ p, label, span, table{
 .datos_cliente td{
 	width: 50%;
 	/* padding-left: 20px; */
-	font-size: 11pt;
+	font-size: 10pt;
 }
 .textright{
 	text-align: right;
@@ -99,18 +99,18 @@ p, label, span, table{
 	background: #457ebe; /*#6179ca;*/ /*#058167;*/
 	color: #FFF;
 	padding: 5px;
-	font-size: 12pt;
+	font-size: 10pt;
 }
 #detalle_productos tr:nth-child(even) {
     background: #ededed;
 }
 #detalle_productos td {
-	font-size: 11pt;
+	font-size: 9pt;
 	text-align: center;
 }
 #detalle_totales span{
 	font-family: 'BrixSansBlack';
-	font-size: 12pt;
+	font-size: 10pt;
 }
 .nota{
 	font-size: 8pt;
