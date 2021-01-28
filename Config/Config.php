@@ -4,7 +4,7 @@
     // const BASE_URL = "http://localhost/JL/AD/ejemplos-ws/navegacion";
 
     function base_url(){
-        return "http://aplicativo-ecommerce.herokuapp.com";
+        return "https://aplicativo-ecommerce.herokuapp.com";
         //return "http://localhost/final-ecommerce";
         // return "http://192.168.0.106/JL/AD/ejemplos-ws/navegacion";
     }
