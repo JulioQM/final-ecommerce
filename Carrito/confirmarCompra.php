@@ -168,7 +168,7 @@ if (!empty($_POST)) {
                             <p><b>Método  de pago.</b></p>
                         </div>
                         <div class="ml-auto p-2">
-                            <a href="metodopago.php" class="text-primary"><i class="fa fa-plus-circle text-primary"></i>Ingresar metodo de pago </a>
+                            <a href="metodopago.php" class="text-primary"><i class="fa fa-plus-circle text-primary"></i>Ingresar método de pago </a>
                         </div>
                     </div>
                     <div id="html"></div>
@@ -193,6 +193,10 @@ if (!empty($_POST)) {
                     <table>
                         <thead>
                             <tr>
+<<<<<<< HEAD
+=======
+                                
+>>>>>>> dfd3e1ed3609502e03706c841886af39a4b1df4a
                                 <th width="45%">Productos</th>
                                 <th width="45%">Cantidad</th>
                                 <th width="45%">Precio</th>
@@ -200,6 +204,10 @@ if (!empty($_POST)) {
                         </thead>
                         <tbody>
                             <tr>
+<<<<<<< HEAD
+=======
+                            
+>>>>>>> dfd3e1ed3609502e03706c841886af39a4b1df4a
                                 <td width="45%">
                                     <p id="mostrar-nombres"></p>
                                 </td>
