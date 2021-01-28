@@ -135,9 +135,9 @@
     </main>
     </div>
     <footer class="bg3 p-t-75 p-b-32">
-        <div class="containerF">
-            <div class="rowF">
-                <div class="col-smF col-lg-F p-b-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm col-lgF p-b-50">
                     <h4 class="stext-301 cl0 p-b-30">
                         Integrantes
                     </h4>
@@ -152,22 +152,22 @@
                     </p>
                 </div>
 
-                <div class="col-smF col-lg-F p-b-50">
+                <div class="col-smF col-lg p-b-50">
                     <h4 class="stext-301 cl0 p-b-30">
                         Descripción del<br> Proyecto:
                     </h4>
                     <p class="stext-107 cl7 size-201">
-                        Proyecto en el cual desarrollaremos un Apirest E-COMERCE y lo consumiremos mediante un fronent
+                    Proyecto en el cual desarrollaremos un Apirest de tipo E-COMERCE y lo consumiremos mediante un fronent
                     </p>
                 </div>
 
-                <div class="col-smF col-lg-F p-b-50">
+                <div class="col-smF col-lg p-b-50">
                     <h4 class="stext-301 cl0 p-b-30">
                     Contáctanos: 
                     </h4>
 
                     <p class="stext-107 cl7 size-201">
-                    ¿Alguna Pregunta? Si necesita ayuda, contáctenos en nuestra página de Facebook, Instagram y o Twitter
+                    ¿Alguna Pregunta? Si necesita ayuda contáctenos en nuestra página  de Facebook, Instagram y Twitter
                     </p>
 
                     <div class="p-t-27">
@@ -192,7 +192,7 @@
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 Copyright &copy;<script>
                     document.write(new Date().getFullYear());
-                </script> All rights reserved | Proyecto desarrollado por el grupo 7
+                </script> All rights reserved | Proyecto realizado por el grupo 7
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 
             </p>
