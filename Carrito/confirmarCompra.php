@@ -180,9 +180,10 @@ if (!empty($_POST)) {
 
                     </form>
                     <form class="pb-3">
+                    
 
                     </form>
-                    <div> <input type="button" value="Proceder con el pago" onclick="post_pedido()" class="btn btn-primary btn-block"> </div>
+                    <div> <input type="button" value="Proceder con el pago" onclick="post_detallePedido()" class="btn btn-primary btn-block"> </div>
                 </div>
             </div>
             <div class="col-sm-3 col-md-4 offset-md-1 mobile" style="margin-left: 50px;">

@@ -1,4 +1,5 @@
 
+post_pedido();
 
 function obtener_producto() {
     if (localStorage.getItem("productos")) {
@@ -67,7 +68,6 @@ function post_pedido() {
         .then(data => console.log(data))
         ;
 
-    post_detallePedido();
 
 }
 
