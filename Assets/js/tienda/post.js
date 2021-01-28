@@ -51,6 +51,7 @@ function post_detallePedido() {
             ;
 
     }
+    swal("Compra","Su compra se ha realizado con éxito!","success");
 
 }
 

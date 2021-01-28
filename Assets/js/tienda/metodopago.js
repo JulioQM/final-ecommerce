@@ -111,7 +111,7 @@ function confirmarPagoC(c) {
     cvvt = document.getElementById("cvvTarjeta").value;
 
     if(numerot === "" || nombret === "" || mest === "" || añot === "" || cvvt === ""){
-        alert("Complete todos los campos")
+        swal("Error","Ingrese datos del pago.","error");
     }else{
         if (validar_tarjeta()) {
 
