@@ -167,7 +167,7 @@ $(document).ready(function () {
         e.preventDefault();
         var codCliente = $(this).attr('cl');
         var numPedido = $(this).attr('f');
-
+        console.log(codCliente+" - "+numPedido);
         generarPDF(codCliente, numPedido);
     });
 

@@ -21,10 +21,10 @@
                     <!-- <div class="form-row"> -->
                         <!-- <input type="hidden" name="idPublicidad" id="idPublicidad" value=""> -->
                         <div class="form-row">
-                            <div class="form-group col-md-6">
+                            <!-- <div class="form-group col-md-6">
                                 <label class="control-label">Id Publicidad <span class="required">*</span></label>
                                 <input class="form-control" id="txtPublicidad" name="idpublicidad" type="text" placeholder="ID" required>
-                            </div>
+                            </div> -->
                             <div class="form-group col-md-6">
                                 <label class="control-label">Descripción <span class="required">*</span></label>
                                 <textarea class="form-control" id="txtDescripcion" name="descripcion" rows="2" placeholder="Descripción de la Publicidad" required></textarea>
